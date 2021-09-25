@@ -7,12 +7,18 @@ public class EjercicioArreglos100Num {
         // 1.- Crear Arreglo que permita 100 numeros enteros
         // 2.- Llenar Arreglo con numero aleatorios
         // int numero = (int)(Math.random() * 100);
+        // 3.- Mostrar el nunero mayor en consola
+        // 4.- Mostrar el numero menor en consola
+        // 5.- Mostrar numeros Primos
 
-        // Declaracion de Arreglo
+
+        // Declaracion de Variables y Arreglo
         int numEnteros[] = new int[100];
         int mayor = numEnteros[0];
         int menor = numEnteros[1];
         int i, x;
+        boolean esPrimo = false;
+        int numPrimo;
 
         // Funciona para asignar numeros random al Arreglo
         for (int numerosIndice = 0; numerosIndice < numEnteros.length; numerosIndice++) {
@@ -29,6 +35,7 @@ public class EjercicioArreglos100Num {
                         menor = numEnteros[x];
                     }
                 }
+
             }
         }
         System.out.println("El numero mayor es " + mayor);
