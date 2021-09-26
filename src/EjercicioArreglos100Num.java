@@ -25,13 +25,13 @@ public class EjercicioArreglos100Num {
             numEnteros[numerosIndice] = (int) (random() * 100);
             System.out.println(numEnteros[numerosIndice] + " ");
 
-        // Buscar el numero Mayor en el Arreglo
+            // Buscar el numero Mayor en el Arreglo
             for (i = 1; i < numEnteros.length; i++) {
                 if (numEnteros[i] > mayor) {
                     mayor = numEnteros[i];
                 }
                 for (x = 1; x > numEnteros.length; x++) {
-                    if (numEnteros[x] < menor){
+                    if (numEnteros[x] < menor) {
                         menor = numEnteros[x];
                     }
                 }
