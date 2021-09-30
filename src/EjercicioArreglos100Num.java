@@ -16,9 +16,9 @@ public class EjercicioArreglos100Num {
         int numEnteros[] = new int[100];
         int mayor = numEnteros[0];
         int menor = numEnteros[1];
-        int i, x;
+        int i =0, x, j;
+        int numPrimo=0;
         boolean esPrimo = false;
-        int numPrimo;
 
         // Funciona para asignar numeros random al Arreglo
         for (int numerosIndice = 0; numerosIndice < numEnteros.length; numerosIndice++) {
@@ -34,12 +34,21 @@ public class EjercicioArreglos100Num {
                     if (numEnteros[x] < menor) {
                         menor = numEnteros[x];
                     }
+                    for ( j = 2; j <= numEnteros[i] / 2; j++){
+                        esPrimo = true;
+                        if(numEnteros[i] % j == 0){
+                          esPrimo = false;
+
+                        }
+                    }
                 }
 
             }
         }
         System.out.println("El numero mayor es " + mayor);
         System.out.println("El numero menor es " + menor);
+        if(esPrimo)
+        System.out.println("Los numeros Primos son: " + numEnteros[i]);
 
     }
     }
