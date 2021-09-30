@@ -31,7 +31,6 @@ public class EjercicioArreglos100Num {
             Arrays.sort(numEnteros, 1, 99);
             System.out.println(numEnteros[numerosIndice] + " ");
 
-
             // Buscar el numero Mayor en el Arreglo
             for (i = 1; i < numEnteros.length; i++) {
                 if (numEnteros[i] > mayor) {
@@ -47,22 +46,31 @@ public class EjercicioArreglos100Num {
                     sum = (sum + numEnteros[sumX]) / 100;
                     sumaPU = numEnteros[0] + numEnteros[99];
                 }
-                // Existe 100
-                for (int chen : numEnteros) {
-                    if (chen == 100) {
-                        es100 = true;
-                        System.out.println("Existe cien");
-                    }
-                }
-
             }
+
         }
         System.out.println("El numero mayor es " + mayor);
         System.out.println("El numero menor es " + menor);
         System.out.println("El promedio del arreglo es :" + sum);
         System.out.println("Suma del primer y ultimo valor es :" + sumaPU);
-        Arrays.sort(numEnteros, 1, 99);
-
-
+        // Existe 100 (Probado con 99)
+        for (int chen : numEnteros) {
+            if (chen == 100) {
+                es100 = true;
+            }
+            System.out.println("Existe cien");
+            break;
+        }
+        // Buscar numeros Pares en el Arreglo
+        for (j = 0; j < numEnteros.length; j++) {
+            esPrimo = true;
+            for (numPrimo = 2; numPrimo < j; numPrimo++) {
+                if (j%numPrimo==0) {
+                    esPrimo = false;
+                }
+            }
+            if(esPrimo)
+                System.out.println("Los numeros primos son: " + j);
+        }
     }
-    }
+}
