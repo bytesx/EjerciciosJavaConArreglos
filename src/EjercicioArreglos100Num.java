@@ -70,8 +70,8 @@ public class EjercicioArreglos100Num {
                 System.out.println("Los numeros primos son: " + j);
         }
         // Imprimiendo Numeros Pares
-        for ( z = 0; z < numEnteros.length; z++){
-            if (numEnteros[z]%2==0)
+        for (z = 0; z < numEnteros.length; z++) {
+            if (numEnteros[z] % 2 == 0)
                 System.out.println("Son numeros pares: " + numEnteros[z] + " ");
         }
         // Existe 100 (Probado con 99)
